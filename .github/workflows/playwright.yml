@@ -1,7 +1,7 @@
-name: Playwright Tests
+name: Check for ticket availability
 on:
   schedule:
-    - cron: '0 */12 * * *'
+    - cron: '0 */8 * * *'
   workflow_dispatch: # Allows manual trigger
 
 jobs:
