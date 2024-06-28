@@ -20,4 +20,4 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
     - name: Send email on failure
-      run: npm run send_email
+      run: npm run send_mail
