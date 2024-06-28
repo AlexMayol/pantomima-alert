@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "send_mail": "node index.js",
     "test": "npx playwright test",
     "test:ui": "npx playwright test --ui"
   },

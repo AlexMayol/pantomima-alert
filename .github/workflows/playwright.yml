@@ -20,9 +20,4 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
     - name: Send email on failure
-      run: |
-        curl --request POST \
-        --url https://api.sendgrid.com/v3/mail/send \
-        --header "Authorization: Bearer ${{ secrets.SENDGRID_API_KEY }}" \
-        --header 'Content-Type: application/json' \
-        --data '{"personalizations": [{"to": [{"email": "alexmayolc@gmail.com"}]}],"from": {"email": "alexmayol@hotmail.com"},"subject": "Entradas de Pantomina Full","content": [{"type": "text/plain", "value": "Puede que las entradas ya estén disponibles"}]}'
+      run: npm run send_email
