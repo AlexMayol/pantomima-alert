@@ -24,4 +24,5 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
     - name: Send email on failure
+      if: failure()
       run: npm run send_mail
